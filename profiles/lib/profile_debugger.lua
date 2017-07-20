@@ -123,6 +123,8 @@ function Debug.process_way(way,result)
   result.forward_speed = -1
   result.backward_speed = -1
   result.duration = 0
+  result.forward_classes = {}
+  result.backward_classes = {}
   
   -- intercept tag function normally provided via C++
   function way:get_value_by_key(k)
