@@ -410,6 +410,7 @@ void EdgeBasedGraphFactory::GenerateEdgeExpandedEdges(
 
     guidance::TurnAnalysis turn_analysis(*m_node_based_graph,
                                          m_coordinates,
+                                         m_osm_node_ids,
                                          node_restriction_map,
                                          m_barrier_nodes,
                                          m_compressed_edge_container,
